@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Move Images with WASD Keys</title>
     <link rel="icon" href="../image/camap.gif">
-    <link rel="stylesheet" href="../Code.css/Code3.css">
+    <link rel="stylesheet" href="./Code3.css">
     
    
 </head>
 <body>
+   
     <button class="audio-button" id="amthanh">Play Sound</button>
     <audio id="audioPlayer">
       <source src="../image/am.mp3" type="audio/mp3">
@@ -43,7 +44,6 @@
         document.body.style.backgroundImage = randomImage;
     }
 </script>
-    
 
     <div class="danca">
         <img class="image" id="image1" src="../image/cacon.gif">
@@ -53,6 +53,7 @@
         <img class="image" id="image15" src="../image/cacon.gif">
         <img class="image" id="image16" src="../image/cacon.gif">
     </div>
+    <p  class ="image" id ="p1"> You can use W,A,S,D to control shark</p>
     <img class="image" id="image2" src="../image/caheo.gif">
     <img class="image" id="image22" src="../image/caheo.gif">
     <img class="image" id="image3" src="../image/saobien.gif">
@@ -67,6 +68,15 @@
     <img class="image" id="che" src="../image/Screenshot 2024-07-17 142934.png">
     <img class="image" id="che2" src="../image/Screenshot 2024-07-17 142934.png">
     <img src="../image/camap.gif" alt="Image" class="image" id="shark">
+
+    <script>
+       
+        function hideText() {
+            document.getElementById("p1").classList.add("hidden");
+        }
+        document.getElementById("p1").classList.remove("hidden");
+        setTimeout(hideText, 3000);
+    </script>
 
     <script>
         const image = document.getElementById('shark');
